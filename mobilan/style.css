@@ -1,0 +1,41 @@
+/* style.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.car {
+    width: 200px;
+    height: auto;
+    animation: drive 5s linear infinite;
+    animation-play-state: paused; /* Starts the animation in a paused state */
+}
+
+.button {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@keyframes drive {
+    0% {
+        transform: translateX(-370%);
+    }
+    100% {
+        transform: translateX(370%);
+    }
+}

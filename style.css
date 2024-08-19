@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #999;
+}
+
+.coverH{
+    width: 65%;
+    margin: 0 0 0 480px;
+}
+.head {
+    width: 35%;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #888;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+}
+
+.game-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.game {
+    background-color: #888;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.game a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.game:hover {
+    background-color: #f0f0f0;
+}
+
+.game-preview {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-preview img {
+    max-width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.about-author {
+    flex: 1;
+    padding: 20px;
+    background-color: #888;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.about-author img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.about-author p {
+    font-size: 14px;
+    color: #000;
+}

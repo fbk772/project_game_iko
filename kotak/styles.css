@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+#game-container {
+    position: relative;
+}
+
+#game-board {
+    width: 500px;
+    height: 500px;
+    background-color: #000;
+    position: relative;
+    border: 2px solid #fff;
+}
+
+#game-over {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#start-btn, #try-again-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.maze-cell {
+    position: absolute;
+    background-color: #555;
+    border: 1px solid #333;
+}
+
+.coin {
+    position: absolute;
+    background-color: gold;
+    border-radius: 50%;
+}
+
+.exit {
+    position: absolute;
+    background-color: red;
+}
+
+.player {
+    position: absolute;
+    background-color: blue;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+#game-container {
+    position: relative;
+}
+
+#game-board {
+    width: 500px;
+    height: 500px;
+    background-color: #000;
+    position: relative;
+    border: 2px solid #fff;
+}
+
+.maze-wall {
+    position: absolute;
+    background-color: #888;
+}
+
+.maze-path {
+    position: absolute;
+    background-color: #000;
+}
+
+.coin {
+    position: absolute;
+    background-color: gold;
+    border-radius: 50%;
+}
+
+.exit {
+    position: absolute;
+    background-color: gray; /* Initially inaccessible */
+}
+
+.player {
+    position: absolute;
+    background-color: blue;
+}
+
+.enemy {
+    position: absolute;
+    background-color: red;
+}
+
+#reset-btn {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background-color: #0056b3;
+}
+

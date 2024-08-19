@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">
+        <h1>Selamat Datang</h1>
+        <h3>Di</h3>
+        <h2>Project Game Pixel</h2>
+    </div>
+    <div class="game-container">
+        <div class="game-section">
+            <div class="game" onmouseover="showImage('mobilan/img/mobil.png')" onmouseout="hideImage()"><a href="mobilan/index.html">Mobil Berjalan</a></div>
+            <div class="game" onmouseover="showImage('TicTacToe/img/game.png')" onmouseout="hideImage()"><a href="TicTacToe/index.html">Tic Tac Toe</a></div>
+            <div class="game" onmouseover="showImage('flappy/img/bird.png')" onmouseout="hideImage()"><a href="flappy/index.html">Flappy Bird</a></div>
+            <div class="game" onmouseover="showImage('kotak/images/balok.png')" onmouseout="hideImage()"><a href="kotak/index.html">Kotak Man</a></div>
+        </div>
+        <div class="game-preview">
+            <img id="gameImage" src="" alt="Game Preview">
+        </div>
+    </div>
+
+    <script>
+        function showImage(imageSrc) {
+            const gameImage = document.getElementById('gameImage');
+            gameImage.src = imageSrc;
+            gameImage.style.opacity = 1;
+        }
+
+        function hideImage() {
+            const gameImage = document.getElementById('gameImage');
+            gameImage.style.opacity = 0;
+        }
+    </script>
+</body>
+</html>
